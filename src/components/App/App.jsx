@@ -1,16 +1,18 @@
-import { Container, Titile, SubTitile } from './App.styled';
 import { ContactForm } from '../ContactForm';
 import { Filter } from '../Filter';
 import { ContactList } from '../ContactList';
+import { Frame, Container, Title, SubTitle } from './App.styled';
 
 export const App = () => {
   return (
     <Container>
-      <Titile>Phonebook</Titile>
+      <Frame>
+        <Title>Phonebook</Title>
       <ContactForm />
-      <SubTitile>Contacts</SubTitile>
+      <SubTitle>Contacts</SubTitle>
       <Filter/>
       <ContactList/>
+      </Frame>
     </Container>
   );
 };
